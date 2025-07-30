@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Montserrat-Light.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+@theme {
+  --color-black: #101010;
+  --color-dark-gray: #232323;
+  --color-gray: #868686;
+  --color-light-gray: #f3f3f3;
+  --color-emerald: #9effbf;
+  --color-purple: #7941a7;
+  --color-pink: #e2beff;
+  --color-blue: #1059c8;
+
+  --font-montserrat: "Montserrat", "sans-serif";
+
+  --text-hero: 112px;
+  --text-hero--line-height: 100%;
+  --text-h1: 81px;
+  --text-h1--line-height: 100%;
+  --text-h2: 20px;
+  --text-h2--line-height: 100%;
+  --text-h4: 36px;
+  --text-h4--line-heightt: 124%;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+* {
+  font-family: var(--font-montserrat), serif;
+}
