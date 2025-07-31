@@ -2,7 +2,7 @@
 import { useFetchPosts } from '~/composables/useFetchPosts'
 import PostList from '~/components/ui/posts/PostList.vue'
 
-const posts = await useFetchPosts()
+const { data } = await useFetchPosts()
 </script>
 
 <template>
@@ -11,6 +11,6 @@ const posts = await useFetchPosts()
 			<h1 class="text-h1">Articles</h1>
 		</section>
 
-		<PostList :posts="posts" />
+		<PostList :posts="data" />
 	</NuxtLayout>
 </template>
