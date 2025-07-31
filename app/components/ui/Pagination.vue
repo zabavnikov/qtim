@@ -21,6 +21,8 @@ const getItems = computed(() => {
 
 		return items.slice(from, to)
 	}
+
+	return []
 })
 </script>
 
